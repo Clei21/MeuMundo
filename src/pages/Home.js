@@ -1,10 +1,11 @@
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
 
 export function HomeScreen({ navigation }) {
     return (
       <View style={styles.container}>
+        <ImageBackground source={require('../../assets/an.jpg')}  resizeMode="cover"  style={{  flex: 1,
+    alignItems: 'center', justifyContent: 'center' }} >
         <Text style={styles.title}>Aplicativo</Text>
-        <Image source={require('../../assets/an.jpg')} style={styles.logo} />
   
         <TouchableOpacity
           style={styles.button}
@@ -20,6 +21,7 @@ export function HomeScreen({ navigation }) {
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Facebook</Text>
         </TouchableOpacity>
+        </ImageBackground>
       </View>
     );
 }
@@ -28,9 +30,6 @@ export function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'purple',
-      justifyContent: 'center',
-      alignItems: 'center',
     },
     title: {
       fontSize: 24,
