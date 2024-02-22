@@ -3,9 +3,9 @@ import { View, Text, Image, TouchableOpacity, StyleSheet, ImageBackground } from
 export function HomeScreen({ navigation }) {
     return (
       <View style={styles.container}>
-        <ImageBackground source={require('../../assets/an.jpg')}  resizeMode="cover"  style={{  flex: 1,
+        <ImageBackground source={require('../../assets/cvs.jpg')}  resizeMode="cover"  style={{  flex: 1,
     alignItems: 'center', justifyContent: 'center' }} >
-        <Text style={styles.title}>Aplicativo</Text>
+ 
   
         <TouchableOpacity
           style={styles.button}
@@ -14,13 +14,14 @@ export function HomeScreen({ navigation }) {
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
   
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Google</Text>
+        <TouchableOpacity 
+        style={styles.button}
+        onPress={() => navigation.navigate('Cadastro')}
+        >
+          <Text style={styles.buttonText}>Cadastro</Text>
         </TouchableOpacity>
   
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Facebook</Text>
-        </TouchableOpacity>
+       
         </ImageBackground>
       </View>
     );
