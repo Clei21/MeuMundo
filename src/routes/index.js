@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeScreen } from "../pages/Home";
 import TelaLogin from "../../componentes/TelaLogin";
-import TelaCadastro from '../../componentes/TelaCadastro/cadastro';
+import TelaCadastro from '../../componentes/TelaCadastro/Cadastro';
 import TelaCamera from "../../componentes/TelaCamera/camera";
 import Perfil from '../../componentes/Perfil/Mundo';
 import Avatar from '../../componentes/Avatar/Bem Vindo';

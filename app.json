@@ -22,8 +22,16 @@
         "foregroundImage": "./assets/LOOO.png",
         "backgroundColor": "#D4F0FF"
       },
-      "package": "com.cleid.myapp"
+      "package": "com.cleid.myapp",
     },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/LOOO.png"
     },
